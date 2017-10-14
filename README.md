@@ -3,10 +3,11 @@
 This is the list of TypeScript NodeJs small help functions which will help with development process
 
 ### Filtered Ls
+`filteredLs.ts`
 
 Search all files in dir (First command line argument) with extension (second command line argument);
 
-File: `filteredLs.ts`
+Example:
 ```ts
 const filteredLs = require('./filteredLs');
 const folder = './';
