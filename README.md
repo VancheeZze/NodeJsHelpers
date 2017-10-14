@@ -8,5 +8,14 @@ Search all files in dir (First command line argument) with extension (second com
 
 File: `filteredLs.ts`
 ```ts
-node filteredLs.ts ./ ts
+const filteredLs = require('./filteredLs');
+const folder = './';
+const ext = 'ts';
+
+filteredLs(folder, ext, (err, list) => {
+	if (err) throw new Error(err);
+	list.forEach(function (file) {
+		console.log(file)
+	})
+})
 ```
