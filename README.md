@@ -15,7 +15,7 @@ const ext = 'ts';
 
 filteredLs(folder, ext, (err, list) => {
 	if (err) throw new Error(err);
-	list.forEach(function (file) {
+	list.forEach(file => {
 		console.log(file)
 	})
 })
